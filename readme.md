@@ -24,6 +24,6 @@ CMakeFindKautilModule(c11_string_allocator NAME KautilC11StringAllocator.0.0.1.s
 message(${c11_string_allocator.CONFIGURE_STRING})  
 
 # (2)
-# below command is added into cmake_install.,cmake 
+# below command is added into cmake_install.cmake 
 # execute_process(COMMAND cmake --install "${c11_string_allocator.BUILD_DIR}" --prefix='${CMAKE_INSTALL_PREFIX}' )
 ```
