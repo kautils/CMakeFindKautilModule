@@ -14,7 +14,7 @@ macro(CMakeFindKautilModule prfx)
     set(${prfx}.VARS ${${prfx}.VARS_buf} CACHE STRING "variables struct ${prfx} has." FORCE)
     string(APPEND ${prfx}.CONFIGURE_STRING 
             "set(${${m}_NAME}_DIR \"\\$\\{PACKAGE_PREFIX_DIR}/lib/cmake/${${m}_NAME}\")\n" 
-            "find_package(\"${${m}_NAME} REQUIRED\")\n" 
+            "find_package(${${m}_NAME} REQUIRED)\n" 
             "\n")
     foreach(__v ${${m}_unsetter})
         unset(${__v})
